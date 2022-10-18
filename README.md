@@ -1,2 +1,3 @@
 # Solfeggio
-Simple music player
+Simple web music player.
+Not released yet
