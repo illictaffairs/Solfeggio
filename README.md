@@ -1,3 +1,3 @@
 # Solfeggio
 Simple web music player.
-Not released yet
+choppy and laggy
