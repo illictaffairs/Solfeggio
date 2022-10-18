@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Solfeggio | Music Player</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+	<link rel="icon" type="image/png" href="./images/favicon.png">
+	<script type="text/javascript" src="./scripts/script.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<audio src="./audio/sweet-carolina.mp3" preload="metadata" loop></audio>
+	<div class="audioplayer-container">
+		<audio src="./audio/sweet-carolina.mp3" preload="auto"></audio>
+		<div class="audioplayer-cover"></div>
+		<div class="song-info"><div id="song-title" class="text-title">Sweet Carolina</div>
+		<div id="artist-title" class="text-ordinary">Lana Del Rey</div></div>
+		<div class="audioplayer-controls-container">
+			<div class="controls">
+				<input type="button" value="skip_previous" class="material-symbols-rounded" />
+				<input type="button" value="play_arrow" onclick="return change(this);" class="material-symbols-rounded" />
+				<input type="button" value="skip_next" class="material-symbols-rounded" />
+			</div>
+			<div class="seek">
+				<span id="current-time" class="text-ordinary">0:00</span>
+				<input type="range" id="seek-slider" max="100" value="100">
+				<span id="duration" class="text-ordinary">0:00</span>
+			</div>
+			<div class="sound">
+				<div class="material-symbols-rounded">volume_off</div>
+				<input type="range" id="volume-slider" max="100" value="100">
+				<div class="material-symbols-rounded">volume_up</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
